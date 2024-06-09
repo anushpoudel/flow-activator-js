@@ -1,8 +1,8 @@
 # Flow Activator
 
-## Overview
-
 Flow Activator is a command-line tool that allows users to activate the latest version of specified flows in connected Salesforce orgs. This script supports multi-select functionality for choosing the orgs where the flows should be activated.
+
+![activate_flows_demo](https://github.com/anushpoudel/flow-activator-js/assets/31843222/38dbf200-8f3d-45f0-87f4-ea24d180fb88)
 
 ## Prerequisites
 
