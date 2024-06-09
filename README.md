@@ -16,7 +16,7 @@ Before running the script, ensure you have the following installed:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/anushpoudel/flow_activator_js.git
+   git clone https://github.com/anushpoudel/flow-activator-js.git
    cd flow_activator
    ```
 
