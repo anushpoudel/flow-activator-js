@@ -16,7 +16,7 @@ import figlet from 'figlet';
  */
 const displayAsciiArt = (text) => {
   try {
-    const asciiArt = figlet.textSync(text, { horizontalLayout: 'full' });
+    const asciiArt = figlet.textSync(text, { horizontalLayout: 'default', font: 'small' });
     console.log(asciiArt);
   } catch (error) {
     console.error(`Error generating ASCII art: ${error.message}`);
