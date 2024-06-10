@@ -1,12 +1,27 @@
 {
   "name": "flow-activator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Flow Activator is a command-line tool that allows users to activate the latest version of specified flows in connected Salesforce orgs. This script supports multi-select functionality for choosing the orgs where the flows should be activated.",
   "main": "activateFlows.js",
+  "bin": {
+    "flow-activator": "./activateFlows.js"
+  },
   "type": "module",
   "scripts": {
     "start": "node activateFlows.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anushpoudel/flow-activator-js.git"
+  },
+  "keywords": [
+    "flow",
+    "activator",
+    "salesforce",
+    "sfdx"
+  ],
+  "author": "Anush Poudel",
+  "license": "ISC",
   "dependencies": {
     "axios": "^1.7.2",
     "figlet": "^1.7.0",

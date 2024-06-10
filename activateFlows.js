@@ -2,7 +2,7 @@
  * Flow Activator Script - Activates the latest version of specified Salesforce flows in selected orgs.
  *
  * Author: Anush Poudel
- * GitHub: https://github.com/anushpoudel
+ * Source: https://github.com/anushpoudel/flow-activator-js.git
  */
 
 import { execSync } from 'child_process';
@@ -112,6 +112,7 @@ const activateLatestFlow = async (flowApiName, accessToken, instanceUrl) => {
  */
 const main = async () => {
   displayAsciiArt('Flow Activator');
+  console.log('Source: https://github.com/anushpoudel/flow-activator-js.git\n');
 
   const flowQuestion = {
     type: 'text',
