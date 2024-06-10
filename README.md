@@ -17,7 +17,7 @@ Before running the script, ensure you have the following installed:
 
    ```bash
    git clone https://github.com/anushpoudel/flow-activator-js.git
-   cd flow_activator
+   cd flow-activator-js
    ```
 
 2. **Install the required Node.js packages**:
@@ -41,7 +41,7 @@ Ensure that you are authenticated to your Salesforce orgs using the SF CLI.
 ## Troubleshooting
 
 - **Ensure SF CLI is installed and authenticated**:
-  Ensure that you have authenticated to all the orgs you intend to use with the script. Use the `sfdx force:org:list` command to list all authenticated orgs.
+  Ensure that you have authenticated to all the orgs you intend to use with the script. Use the `sf org list` or `sfdx force:org:list` command to list all authenticated orgs.
 
 - **Node.js Environment Issues**:
   If you encounter issues with Node.js dependencies, ensure that you have installed all necessary packages by running `npm install`.
