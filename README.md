@@ -42,7 +42,7 @@ npm install -g flow-activator
    npm install
    ```
 
-3. **Startthe script**:
+3. **Start the script**:
 
    ```bash
    npm start
