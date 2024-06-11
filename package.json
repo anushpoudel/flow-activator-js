@@ -1,6 +1,6 @@
 {
   "name": "flow-activator",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Flow Activator is a command-line tool that allows users to activate the latest version of specified flows in connected Salesforce orgs. This script supports multi-select functionality for choosing the orgs where the flows should be activated.",
   "main": "activateFlows.js",
   "bin": {
