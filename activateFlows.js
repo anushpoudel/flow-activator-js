@@ -11,6 +11,7 @@ import { execSync } from 'child_process';
 import axios from 'axios';
 import prompts from 'prompts';
 import figlet from 'figlet';
+import ora from 'ora'
 
 /**
  * Display ASCII art
@@ -30,8 +31,10 @@ const displayAsciiArt = (text) => {
  * @returns {Promise<Array>} List of active connected orgs
  */
 const getAuthenticatedOrgs = async () => {
+  const spinner = ora('Fetching org list...').start();
   try {
-    const result = execSync('sfdx force:org:list --json', { encoding: 'utf-8' });
+    const result = await execSync('sfdx force:org:list --json', { encoding: 'utf-8' });
+    spinner.stop();
     const { nonScratchOrgs = [] } = JSON.parse(result).result;
     return nonScratchOrgs.filter(org => org.connectedStatus === 'Connected');
   } catch (error) {
