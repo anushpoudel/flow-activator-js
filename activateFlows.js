@@ -134,6 +134,10 @@ const main = async () => {
   }
 
   const orgs = await getAuthenticatedOrgs();
+  if (!orgs.length) {
+    console.log('No authenticated orgs found. Please authenticate to an org using the SF CLI before running the script.');
+    return;
+  }
   const orgChoices = orgs.map(org => ({ title: org.alias, value: org.alias }));
 
   const orgQuestions = [
