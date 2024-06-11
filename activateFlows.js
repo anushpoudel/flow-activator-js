@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /**
  * Flow Activator Script - Activates the latest version of specified Salesforce flows in selected orgs.
  *
