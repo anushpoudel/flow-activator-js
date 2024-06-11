@@ -59,3 +59,7 @@ Ensure that you are authenticated to your Salesforce orgs using the SF CLI.
 
 - **Node.js Environment Issues**:
   If you encounter issues with Node.js dependencies, ensure that you have installed all necessary packages by running `npm install`.
+
+## License
+
+This project is licensed under the MIT License.
